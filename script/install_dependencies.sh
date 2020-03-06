@@ -16,6 +16,6 @@ mvn clean install -DskipTests
 popd
 rm -rf distkv_tmp
 
-echo "Dousi RPC was installed successfully."
+echo "DistKV was installed successfully."
 
 echo "All dependencies were installed successfully."

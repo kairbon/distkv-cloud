@@ -3,7 +3,7 @@
 set -e
 set -x
 
-cp ../distkv_tmp/target/distkv-server-0.1.4-SNAPSHOT-jar-with-dependencies.jar ./distkv_server.jar
+cp ../distkv_tmp/server/target/distkv-server-0.1.4-SNAPSHOT-jar-with-dependencies.jar ./distkv_server.jar
 cp ../target/distkv-cloud-0.1.4-SNAPSHOT-jar-with-dependencies.jar ./distkv_cloud.jar
 cp ../src/main/java/com/distkv/tool/dashboard/index.html ./index.html
 
