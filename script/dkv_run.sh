@@ -2,7 +2,11 @@
 
 set -e
 set -x
-wget https://distkv-1252912764.cos.ap-shanghai.myqcloud.com/distkv-server-jars/nightly/distkv-server.jar
+
+if [ ! -f "$file" ]; then
+  wget https://distkv-1252912764.cos.ap-shanghai.myqcloud.com/distkv-server-jars/nightly/distkv-server.jar
+fi
+
 cp ../target/distkv-cloud-0.1.0-SNAPSHOT-jar-with-dependencies.jar ./distkv_cloud.jar
 cp ../src/main/java/com/distkv/tool/dashboard/index.html ./index.html
 
